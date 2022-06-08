@@ -105,4 +105,4 @@ tfield = Text(root, width=60, height=10, bg="#CC7722")
 tfield.pack()
 
 root.mainloop()
-my
+
