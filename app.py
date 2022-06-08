@@ -15,7 +15,7 @@ root.title("Weather Forecasting App - Vinit Uid-21BCS7277 ")
 root.iconbitmap()
 # Define Img
 bg = PhotoImage(
-    file="C:/Users/VinitKumarParakh/Desktop/CU B.tech/IR/Python App/osman-rana-HOtPD7Z_74s-unsplash.png")
+    file="C:/Users/VinitKumarParakh/Desktop/CU B.tech/IR/Python App/osman-rana-HOtPD7Z_74s-unsplash.png") // change it !!
 # Create Lable
 my_lable = Label(root, image=bg)
 my_lable.place(x=0, y=0, relwidth=1, relheight=1)
@@ -86,20 +86,20 @@ def showWeather():
 # ------------------------------Frontend part of code - Interface
 
 
-city_head = Label(root, text='Entre City Name', font='Poppins-SemiBold 18 bold', background="lightblue").pack(
+city_head = Label(root, text='Entre City Name', font='arial', background="lightblue").pack(
     pady=10)  # to generate label heading
 
 inp_city = Entry(root, textvariable=city_value,
-                 width=18, font='Poppins-SemiBold 18', bg="#CC7722").pack()
+                 width=18, font='arial', bg="#CC7722").pack()
 
 
-Button(root, command=showWeather, text="Check Weather", font="Poppins-SemiBold 18 ",
+Button(root, command=showWeather, text="Check Weather", font="arial",
        bg='lightblue', fg='black', activebackground="teal", padx=8, pady=8).pack(pady=20)
 
 # to show output
 
 weather_now = Label(root, text="The Weather is :",
-                    font='Poppins-SemiBold 18 bold').pack(pady=10)
+                    font='arial').pack(pady=10)
 
 tfield = Text(root, width=60, height=10, bg="#CC7722")
 tfield.pack()
